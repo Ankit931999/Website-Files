@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTech Solutions</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: tomato;
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ProTech Solutions</div>
+        <ul class="nav-links">
+            <li><a href="#home">What We Do</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home" class="hero">
+        <video class="background-video" autoplay loop muted playsinline>
+    <source src="Videos/software.mp4" type="video/mp4">
+</video>
+    </section>
+    
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>ProTech Solutions is a global leader in digital transformation, helping businesses achieve excellence.</p>
+    </section>
+    
+    <section id="careers" class="section">
+        <h2>Careers</h2>
+        <p>Join our team to work on cutting-edge technologies and shape the future.</p>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Work Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
