@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - ROSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 15px 30px;
+            color: #3F1651;
+            position: relative;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3F1651;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #3F1651;
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            cursor: pointer;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            padding: 10px;
+            top: 100%;
+            left: 0;
+            white-space: nowrap;
+        }
+        .dropdown a {
+            padding: 8px 15px;
+            color: black;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        .dropdown a:hover {
+            background-color: #f4f4f4;
+        }
+        .nav-item {
+            position: relative;
+        }
+        .nav-item:hover .dropdown {
+            display: flex;
+        }
+        .content {
+            background-color: #3F1651;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .video-section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video-section video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .form-section {
+            background-color: #3F1651;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        .form-container h2 {
+            color: #3F1651;
+            text-align: center;
+        }
+        .form-container input, .form-container textarea, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3F1651;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #2A0F3C;
+        }
+        .footer {
+            background-color: #3F1651;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function scrollToContact() {
+            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ROSS</div>
+        <div class="nav-links">
+            <div class="nav-item">
+                <a href="#">What We Do</a>
+                <div class="dropdown">
+                    <a href="#">Applications</a>
+                    <a href="#">Artificial Intelligence</a>
+                    <a href="#">Business Process</a>
+                    <a href="#">Cloud</a>
+                    <a href="#">Consulting</a>
+                    <a href="#">Data & Analytics</a>
+                    <a href="#">Digital Experiences</a>
+                    <a href="#">Engineering</a>
+                </div>
+            </div>
+            <a href="#">What We Think</a>
+            <a href="#">Careers</a>
+            <a href="#" onclick="scrollToContact()">Contact Us</a>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>Welcome to ROSS Careers</h1>
+        <p>At ROSS, we believe in innovation, collaboration, and growth. Our dynamic and forward-thinking environment empowers individuals to push boundaries, develop cutting-edge solutions, and drive meaningful impact. Join our team and be a part of a culture that values creativity, inclusivity, and professional development.</p>
+    </div>
+    <div class="video-section">
+        <video controls>
+            <source src="https://ankitvermawebsite.s3.eu-north-1.amazonaws.com/Videos/Igniting+Ideas%2C+Fueling+Growth+(1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="contact" class="form-section">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Work Email" required>
+                <input type="text" placeholder="Job Title" required>
+                <input type="text" placeholder="Company" required>
+                <select required>
+                    <option value="">Select Country</option>
+                    <option value="USA">USA</option>
+                    <option value="India">India</option>
+                    <option value="UK">UK</option>
+                </select>
+                <textarea placeholder="Message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        © 2025 ROSS | <a href="#">Disclaimer</a> | <a href="#">Privacy</a> | <a href="#">Modern Slavery Statement</a>
+    </div>
+</body>
+</html>
+

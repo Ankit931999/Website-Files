@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RossMatrix Solutions</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .navbar { background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; z-index: 50; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .navbar span { font-size: 20px; font-weight: bold; color: black; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a, .dropdown button { text-decoration: none; color: black; font-size: 16px; border: none; background: none; cursor: pointer; font-family: Arial, sans-serif; }
+        .dropdown { position: relative; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 10px; }
+        .dropdown-content a { display: block; color: black; padding: 5px 10px; text-decoration: none; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .video-section { display: flex; justify-content: center; align-items: center; margin-top: 80px; }
+        .video-section video { width: 100%; height: auto; max-width: 100%; }
+        .info-section { background: #4B0082; color: white; padding: 20px; text-align: center; margin-top: 20px; }
+        .form-container { max-width: 500px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-radius: 8px; }
+        .form-container h2 { text-align: center; color: #4B0082; }
+        .form-container form { display: flex; flex-direction: column; }
+        .form-container label { font-weight: bold; margin-top: 10px; }
+        .form-container input, .form-container textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+        .form-container textarea { resize: vertical; height: 100px; }
+        .form-container button { background: #4B0082; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; margin-top: 15px; }
+        .form-container button:hover { background: #35006b; }
+        .footer { background: #4B0082; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .footer a { color: white; text-decoration: none; margin-left: 10px; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span>ROSS</span>
+        <div class="nav-links">
+            <div class="dropdown">
+                <button>What We Do</button>
+                <div class="dropdown-content">
+                    <a href="#">Applications</a>
+                    <a href="#">Artificial Intelligence</a>
+                    <a href="#">Business Process</a>
+                    <a href="#">Cloud</a>
+                    <a href="#">Consulting</a>
+                </div>
+            </div>
+            <a href="#">What We Think</a>
+            <a href="#">Careers</a>
+            <a href="#contact-form">Contact</a>
+        </div>
+    </nav>
+    
+    <div class="video-section">
+        <video controls autoplay muted loop>
+            <source src="https://ankitvermawebsite.s3.eu-north-1.amazonaws.com/Videos/Fire+up+your+business+with+us.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="info-section">
+        <p>RossMatrix Solutions leverages cutting-edge technologies and deep domain expertise to empower businesses with innovative software solutions. We specialize in AI-driven applications, cloud transformations, and business process optimizations, catering to industries such as finance, healthcare, retail, and more. Our expert consulting and development services help clients enhance efficiency, security, and scalability. Explore the latest insights from RossMatrix Solutions and discover how we drive digital excellence.</p>
+    </div>
+    
+    <div class="form-container" id="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" placeholder="Enter your full name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Type your message here" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2025 RossMatrix Solutions</p>
+        <div>
+            <a href="#">Disclaimer</a>
+            <a href="#">Privacy</a>
+            <a href="#">Modern Slavery Statement</a>
+        </div>
+    </footer>
+</body>
+</html>
+
